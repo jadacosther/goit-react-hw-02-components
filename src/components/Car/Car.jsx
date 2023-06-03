@@ -1,4 +1,6 @@
+import PropTypes from 'prop-types';
 import React from 'react';
+
 
 class Car extends React.Component{
 
@@ -29,5 +31,10 @@ render(){
 
 }
 
+//validation with proptypes
+Car.propTypes = {
+    color: PropTypes.string.isRequired,
+    mark:  PropTypes.string.isRequired
+  }
 
 export default Car;
