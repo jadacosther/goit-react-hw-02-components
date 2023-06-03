@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "hostname":"https://jadacosther.github.io/goit-react-hw-01-components/",
   "scripts": {
     "deploy": "gh-pages -d dist",
     "dev": "vite",
