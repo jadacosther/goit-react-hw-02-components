@@ -2,26 +2,19 @@ import React from 'react';
 
 class Car extends React.Component{
 
-
-
 state = {
     velocity: 200
-}
+    }
+
 
 constructor(props){
    super(props)
+   
 }
 
-incrementVelocity = (velocity)=>{
-    velocity += 50;
-    this.componentDidUpdate(velocity)
-    alert('Increment Success');
+incrementVelocity = ()=>{
+    this.setState({velocity: this.state.velocity + 50 });
 }
-
-
-componentDidUpdate(velocity) {
-    this.setState({velocity: velocity });
-  }
 
 render(){
   
@@ -30,7 +23,7 @@ render(){
  return <>
     <p>I am a Car of color: {color} and mark {mark}</p>
     <p>I am a Car velocity: {this.state.velocity}</p>
-    <button onClick={this.incrementVelocity(this.state.velocity)}>click</button>
+    <button onClick={this.incrementVelocity}>click</button>
  </> 
 }
 
